@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class="title">
+        <p id="title"><h1>Tic Tac Toe
+            <span>by Mololu</span>
+        </h1></p>
+
+        
+
+    </div>
+    <div class="menu">
+        <button class="newGame">Start Game</button>
+        <button class="instructions">How to Play</button>
+        <button class="settings">Settings</button>
+        <button class="scoresBtn">Scoreboard</button>
+    </div>
+
+    <div class="instructionsPane hidden">
+        <p><h2>How To Play TicTacToe</h2></p>
+        <p></p>
+        <button class="backBtn">Back</button>
+    </div>
+
+    <div class="settingsPane hidden">
+        <button class="sound"></button>
+        <button class="color"></button>
+        <button class="backBtn">Back</button>
+
+    </div>
+
+    <div class="scoreBoard hidden">
+        
+        <p>X:<span class="scoreX">0</span></p>
+        <p>O:<span class="scoreO">0</span></p>
+        <button class="backBtn">Back</button>
+    </div>
+
+    <div class="container hidden">
+        <div class="scores">
+            <h1>Scores</h1>
+            <p class="X"> X : <span id="Xscore">0</span></p>
+            <p class="O"> O : <span id="Oscore">0</span> </p>
+        </div>
+        <div class="board">
+            <div id="board">
+                <div class="column1">
+                    <div class="cell" id="cell01"></div>
+                    <div class="cell" id="cell02"></div>
+                    <div class="cell" id="cell03"></div>
+                </div>
+                <div class="column2">
+                    <div class="cell" id="cell04"></div>
+                    <div class="cell" id="cell05"></div>
+                    <div class="cell" id="cell06"></div>
+                </div>
+                <div class="column3">
+                    <div class="cell" id="cell07"></div>
+                    <div class="cell" id="cell08"></div>
+                    <div class="cell" id="cell09"></div>
+                </div>
+            </div>
+            <button class="menuBtn">Menu</button>
+            <button class="resetBtn">Reset</button>
+        </div>
+    </div>
+    <button class="darkMode">Dark Mode</button>
+   
+    <!-- script -->
+     <script src="script.js"></script>
+</body>
+</html>
