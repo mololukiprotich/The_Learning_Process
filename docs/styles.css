@@ -1,0 +1,276 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section .navbar {
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    background: #00aced;
+    transition: all 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  gap: 2rem;
+  min-height: 80vh;
+  background-color:  rgba(0,0,0,0.1);
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.hero-text,
+.hero-image {
+    display: flex;
+    flex: 1;        /* Each takes equal space */
+    min-width: 0;
+    flex-direction: column;   /* Prevents flex children from overflowing */
+}
+
+.hero-image img {
+  max-width: 100%; /* Image always fits inside container */
+  height: auto;
+  object-fit: cover; 
+  border-radius: 50%; /* Makes the image circular */
+
+}
+
+@media screen and (min-width: 768px) {
+  .hero-image img {
+    width: 50%; 
+    margin: 0 auto;   
+  }
+    
+}
+
+.hero-text a.btn {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #00aced;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+
+.hero-text a.btn:hover {
+    background-color: #0084b4;
+}
+
+.skills, .projects, .certifications {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.skills ul li{
+    text-align: left;
+    margin: 0.5rem 0;
+    list-style: none;
+    background-color: #e4e1e1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.certifications ul li {
+    text-align: left;
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.projects{
+    background-color: oklch(96.346% 0.00319 15.323);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.projects ul li {
+    text-align: center;
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background-color: rgb(219, 226, 226);
+}   
+
+.projects ul li a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;          /* allows cards to go to next line */
+  justify-content: center;  /* center row */       
+  padding: 2rem 5%;
+}
+
+.card {
+  display: block;
+  padding: 2rem;
+  border-radius: 16px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* keep text color normal */
+  transition: all 0.3s;
+  flex: 1 1 200px;          /* grow, shrink, min width */
+  max-width: 300px;         /* optional limit */
+  /* box-shadow: 0 6px 15px rgba(0,0,0,0.08); */
+  padding: 0;
+  overflow: hidden; 
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card:focus {
+  outline: none;   /* removes the browser default focus ring */
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    border: 1px solid #ddddddd9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+    
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact input, #contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact button {
+    padding: 0.75rem;
+    background-color: #00aced;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0084b4;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #00aced;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}

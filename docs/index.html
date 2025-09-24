@@ -1,131 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #445014, #2a7998);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #e2a415;
-            font-size: 3rem;
-        }
-
-        .card {
-            background-color: rgb(18, 140, 185);
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-        }
-
-        .navbar{
-            margin-bottom: 20px;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .navbar button{
-            border: 2px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .navbar button:hover{
-            transform: scale(1.03);
-        }
-
-        footer p {
-            margin: 5px 0;
-            color: #fff;
-        }
-
-        footer a {
-            color: #e2a415;
-            text-decoration: none;
-        }   
-    </style>
+    <title>Kiprotich Mololu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h1>My Portfolio</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <section class="navbar">
+        <nav class="navbar">
+            <span class="logo">Kiprotich Mololu</span>
+            <ul>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="hero">
+        <div class="hero-image">
+            <img src="../assets/hero.jpg" alt="Hero Illustration">
+        </div>
+        <div class="hero-text">
+            <h1>Hi, I'm Kiprotich Mololu </h1>
+             <br>
+            <p>— Web Developer & Innovator</p>
+            <p>I build responsive, user-friendly web apps with a focus on clean design and minimalism. I love creating solutions that connect creativity and functionality.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development (HTML, CSS, JavaScript)
+                <p>Experienced in building responsive and user-friendly websites.</p>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+            <li>Python Programming
+                <p>Proficient in Python for various applications, including web development and data analysis.</p>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+            <li>Data Analysis
+                <p>Skilled in analyzing data sets and deriving actionable insights.</p>
             </li>
+            <li>UI/UX Design
+                <p>Passionate about creating intuitive and visually appealing user interfaces.</p>
+            </li>
+
+        </ul>
+
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <ul class="cards">
+                <li class="card">
+                <a href="#certifications" target="_blank" class="card">
+                    <img src="../assets/webdev.jpg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>I create responsive and modern websites tailored to your needs.</p>
+                </a>
+                </li>
+                <li class="card">
+                    <a href="https://yourportfolio.com/work" target="_blank" class="card">
+                        <img src="../assets/python.jpg" alt="Python Programming">
+                        <h3>Python Programming</h3>
+                        <p>Proficient in Python for web development, automation, and data analysis.</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="https://yourportfolio.com/work" target="_blank" class="card">
+                        <img src="../assets/data.jpg" alt="Data Analysis">
+                        <h3>Data Analysis</h3>
+                        <p>Skilled in analyzing data sets and deriving actionable insights.</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="https://yourportfolio.com/work" target="_blank" class="card">
+                        <img src="../assets/office.jpg" alt="Office Skills">
+                        <h3>Microsoft Office Skills</h3>
+                        <p>Proficiency in Microsoft Office Suite (Word, Excel, PowerPoint).</p>
+                    </a>
+                </li>
             </ul>
         </div>
-        </div>
-    </nav>
-
-    <a href="Stopwatch/">
-    <div class="card" style="width: 18rem;">
-        <img src="Stopwatch.jpeg" class="card-img-top" alt="stopwatch icon">
-        <div class="card-body">
-            <p class="card-text">StopWatch: A build on JS</p>
-         </div>
-    </div>
-    </a>
-
-    <a href="TicTacToe/">
-    <div class="card" style="width: 18rem;">
-        <img src="tictactoe.jpeg" class="card-img-top" alt="tictactoe icon">
-        <div class="card-body">
-            <p class="card-text">Tic Tac Toe: The classic game built with JS</p>
-         </div>
-    </div>
-    </a>
-
-    <a href="totipoemso.onrender.com">
-    <div class="card" style="width: 18rem;">
-        <img src="poetry.jpeg" class="card-img-top" alt="toti poems icon">
-        <div class="card-body">
-            <p class="card-text">Totipoems: A poetry blog built on django with wagtail CMS.</p>
-         </div>
-    </div>
-    </a>
-
-    <a href="">
-    <div class="card" style="width: 18rem;">
-        <img src="todo.jpeg" class="card-img-top" alt="todoList icon">
-        <div class="card-body">
-            <p class="card-text">ToDo List: A task management app built with React.</p>
-         </div>
-    </div>
-    </a>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul class="cards">
+            <li class="card">
+                <a href="https://yourportfolio.com/work" target="_blank" class="card">
+                    <img src="../assets/Stopwatch.jpg" alt="Stopwatch">
+                    <h3>Stopwatch</h3>
+                    <p>A simple stopwatch application built with HTML, CSS, and JavaScript.</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="https://yourportfolio.com/project2" target="_blank" class="card">
+                    <img src="../assets/tictactoe.jpg" alt="Tic Tac Toe">
+                    <h3>Tic Tac Toe</h3>
+                    <p>A classic Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="https://yourportfolio.com/project3" target="_blank" class="card">
+                    <img src="../assets/poetryhub.jpg" alt="PoetryHub">
+                    <h3>PoetryHub</h3>
+                    <p>A poetry blog built on django with integrated wagtail for easy content management.</p>
+                </a>
+            </li>
+        </ul>
+    </section>
 
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
-        <p>Contact: <a href="mailto:mololuemmanuel@gmail.com">mololuemmanuel@gmail.com</a></p>
+        <p class="footer">
+            <section id="contact">
+                <h2>Contact Me</h2>
+                
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <a href="https://www.instagram.com/kiprotichmololu" target="_blank">
+                <img src="../assets/instagram.svg" alt="Instagram" title="Instagram">
+            </a> 
+            <a href="https://www.linkedin.com/in/kiprotichmololu" target="_blank">
+                <img src="../assets/linkedIn.svg" alt="LinkedIn" title="LinkedIn">
+            </a> 
+            <a href="https://github.com/mololukiprotich" target="_blank">
+                <img src="../assets/github.svg" alt="GitHub" title="GitHub">
+            </a>  
+            <a href="https://twitter.com/kiprotichmololu" target="_blank">
+                <img src="../assets/twitter.svg" alt="Twitter" title="Twitter">
+            </a>
+            <a href="mailto:molouemmanuel@gmail.com" target="_blank">
+                <img src="../assets/email.svg" alt="Email" title="Email">
+            </a>
+            <br>
+        </p>
+        <p>&copy; 2025 Kiprotich Mololu. All rights reserved.</p>
     </footer>
 </body>
 </html>
