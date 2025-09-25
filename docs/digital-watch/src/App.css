@@ -1,0 +1,53 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(assets/watch-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(223, 191, 12);
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 1em;
+  font-size: 4rem;
+}
+
+.card {
+  padding: 2em;
+  margin: 5rem;
+  width: 300px;
+  background-color:rgba(237, 174, 91, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  margin-top: 12rem;
+}
+
+.date{
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.time{
+  font-size: 2.5rem;
+  color: rgb(238, 235, 12);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
